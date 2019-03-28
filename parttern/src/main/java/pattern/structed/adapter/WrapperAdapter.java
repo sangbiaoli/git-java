@@ -1,7 +1,7 @@
 package pattern.structed.adapter;
 
-import pattern.structed.adapter.target.Holder;
-import pattern.structed.adapter.target.Targetable;
+import pattern.structed.adapter.targets.Holder;
+import pattern.structed.adapter.targets.Targetable;
 
 /**
  * 对象适配器：内置对象
