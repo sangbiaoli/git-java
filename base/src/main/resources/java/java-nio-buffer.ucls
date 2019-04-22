@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.3" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
   realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="java.nio.Buffer" project="git-base" 
+  <class id="1" language="java" name="java.nio.Buffer" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="544" width="142" x="438" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -10,7 +10,7 @@
       <operations public="true" package="true" protected="true" private="true" static="false"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="java.nio.ByteBuffer" project="git-base" 
+  <class id="2" language="java" name="java.nio.ByteBuffer" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="53" width="87" x="819" y="621"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -19,7 +19,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="java.nio.CharBuffer" project="git-base" 
+  <class id="3" language="java" name="java.nio.CharBuffer" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="53" width="87" x="692" y="621"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -28,7 +28,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="java.nio.DoubleBuffer" project="git-base" 
+  <class id="4" language="java" name="java.nio.DoubleBuffer" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="53" width="99" x="299" y="621"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -37,7 +37,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="java.nio.FloatBuffer" project="git-base" 
+  <class id="5" language="java" name="java.nio.FloatBuffer" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="53" width="87" x="565" y="621"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -46,7 +46,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="java.nio.IntBuffer" project="git-base" 
+  <class id="6" language="java" name="java.nio.IntBuffer" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="53" width="87" x="438" y="621"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -55,7 +55,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="java.nio.LongBuffer" project="git-base" 
+  <class id="7" language="java" name="java.nio.LongBuffer" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="53" width="87" x="172" y="621"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -64,7 +64,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="8" language="java" name="java.nio.ShortBuffer" project="git-base" 
+  <class id="8" language="java" name="java.nio.ShortBuffer" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="53" width="90" x="42" y="621"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -73,7 +73,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <interface id="9" language="java" name="java.lang.Comparable" project="git-base" 
+  <interface id="9" language="java" name="java.lang.Comparable" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="76" width="114" x="438" y="714"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -82,7 +82,7 @@
       <operations public="true" package="true" protected="true" private="true" static="false"/>    
     </display>  
   </interface>  
-  <class id="10" language="java" name="java.nio.HeapByteBuffer" project="git-base" 
+  <class id="10" language="java" name="java.nio.HeapByteBuffer" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="53" width="113" x="793" y="714"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

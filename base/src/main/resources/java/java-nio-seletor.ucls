@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.3" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
   realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="java.nio.channels.Selector" project="git-base" 
+  <class id="1" language="java" name="java.nio.channels.Selector" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="353" y="154"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -10,7 +10,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="java.nio.channels.SelectionKey" project="git-base" 
+  <class id="2" language="java" name="java.nio.channels.SelectionKey" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="24" y="196"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -55,7 +55,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="java.nio.channels.SelectableChannel" project="git-base" 
+  <class id="7" language="java" name="java.nio.channels.SelectableChannel" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="826" y="156"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -64,7 +64,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="8" language="java" name="java.nio.channels.spi.AbstractSelectableChannel" project="git-base" 
+  <class id="8" language="java" name="java.nio.channels.spi.AbstractSelectableChannel" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="835" y="582"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -73,7 +73,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="9" language="java" name="java.nio.channels.DatagramChannel" project="git-base" 
+  <class id="9" language="java" name="java.nio.channels.DatagramChannel" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="678" y="820"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -91,7 +91,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="11" language="java" name="java.nio.channels.SocketChannel" project="git-base" 
+  <class id="11" language="java" name="java.nio.channels.SocketChannel" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="837" y="820"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

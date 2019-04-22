@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.3" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
   realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="java.io.Writer" project="git-base" 
+  <class id="1" language="java" name="java.io.Writer" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="292" width="231" x="811" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -10,52 +10,52 @@
       <operations public="true" package="true" protected="true" private="true" static="false"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="java.io.Reader" project="git-base" 
+  <class id="2" language="java" name="java.io.Reader" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
-    <position height="274" width="148" x="1917" y="37"/>    
+    <position height="-1" width="-1" x="1809" y="166"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="false"/>      
       <operations public="true" package="true" protected="true" private="true" static="false"/>    
     </display>  
   </class>  
-  <interface id="3" language="java" name="java.io.Closeable" project="git-base" 
+  <interface id="3" language="java" name="java.io.Closeable" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1502" y="-52"/>    
+    <position height="-1" width="-1" x="1390" y="-86"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="false"/>      
       <operations public="true" package="true" protected="true" private="true" static="false"/>    
     </display>  
   </interface>  
-  <interface id="4" language="java" name="java.io.Flushable" project="git-base" 
+  <interface id="4" language="java" name="java.io.Flushable" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="681" y="7"/>    
+    <position height="-1" width="-1" x="633" y="-79"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="false"/>      
       <operations public="true" package="true" protected="true" private="true" static="false"/>    
     </display>  
   </interface>  
-  <interface id="5" language="java" name="java.lang.Appendable" project="git-base" 
+  <interface id="5" language="java" name="java.lang.Appendable" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1196" y="-38"/>    
+    <position height="-1" width="-1" x="924" y="-67"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="false"/>      
       <operations public="true" package="true" protected="true" private="true" static="false"/>    
     </display>  
   </interface>  
-  <interface id="6" language="java" name="java.lang.Readable" project="git-base" 
+  <interface id="6" language="java" name="java.lang.Readable" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="2249" y="-19"/>    
+    <position height="-1" width="-1" x="2162" y="-87"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="false"/>      
       <operations public="true" package="true" protected="true" private="true" static="false"/>    
     </display>  
   </interface>  
-  <class id="7" language="java" name="java.io.BufferedWriter" project="git-base" 
+  <class id="7" language="java" name="java.io.BufferedWriter" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="53" width="109" x="1028" y="369"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -64,7 +64,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="8" language="java" name="java.io.CharArrayWriter" project="git-base" 
+  <class id="8" language="java" name="java.io.CharArrayWriter" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="53" width="118" x="1177" y="369"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -73,7 +73,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="9" language="java" name="java.io.FilterWriter" project="git-base" 
+  <class id="9" language="java" name="java.io.FilterWriter" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="53" width="89" x="1335" y="369"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -82,7 +82,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="10" language="java" name="java.io.OutputStreamWriter" project="git-base" 
+  <class id="10" language="java" name="java.io.OutputStreamWriter" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="53" width="140" x="455" y="369"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -91,7 +91,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="11" language="java" name="java.io.PipedWriter" project="git-base" 
+  <class id="11" language="java" name="java.io.PipedWriter" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="53" width="92" x="896" y="369"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -100,7 +100,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="12" language="java" name="java.io.PrintWriter" project="git-base" 
+  <class id="12" language="java" name="java.io.PrintWriter" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="53" width="87" x="635" y="369"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -109,7 +109,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="13" language="java" name="java.io.StringWriter" project="git-base" 
+  <class id="13" language="java" name="java.io.StringWriter" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="53" width="94" x="762" y="369"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -118,72 +118,72 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="14" language="java" name="java.io.CharArrayReader" project="git-base" 
+  <class id="14" language="java" name="java.io.CharArrayReader" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
-    <position height="53" width="123" x="2220" y="369"/>    
+    <position height="-1" width="-1" x="1985" y="383"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="false"/>      
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="15" language="java" name="java.io.FilterReader" project="git-base" 
+  <class id="15" language="java" name="java.io.FilterReader" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
-    <position height="53" width="95" x="1782" y="369"/>    
+    <position height="-1" width="-1" x="1674" y="388"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="false"/>      
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="16" language="java" name="java.io.InputStreamReader" project="git-base" 
+  <class id="16" language="java" name="java.io.InputStreamReader" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
-    <position height="53" width="135" x="1607" y="369"/>    
+    <position height="-1" width="-1" x="1525" y="391"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="false"/>      
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="17" language="java" name="java.io.PipedReader" project="git-base" 
+  <class id="17" language="java" name="java.io.PipedReader" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
-    <position height="53" width="97" x="2383" y="369"/>    
+    <position height="-1" width="-1" x="2137" y="383"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="false"/>      
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="18" language="java" name="java.io.StringReader" project="git-base" 
+  <class id="18" language="java" name="java.io.StringReader" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
-    <position height="53" width="99" x="1917" y="369"/>    
+    <position height="-1" width="-1" x="1810" y="387"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="false"/>      
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="19" language="java" name="java.io.FileReader" project="git-base" 
+  <class id="19" language="java" name="java.io.FileReader" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
-    <position height="53" width="87" x="1607" y="521"/>    
+    <position height="-1" width="-1" x="1525" y="503"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="false"/>      
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="20" language="java" name="java.io.PushbackReader" project="git-base" 
+  <class id="20" language="java" name="java.io.PushbackReader" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
-    <position height="53" width="122" x="1782" y="521"/>    
+    <position height="-1" width="-1" x="1674" y="504"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="false"/>      
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="21" language="java" name="java.io.FileWriter" project="git-base" 
+  <class id="21" language="java" name="java.io.FileWriter" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
-    <position height="53" width="87" x="455" y="521"/>    
+    <position height="-1" width="-1" x="524" y="511"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="false"/>      
@@ -191,83 +191,83 @@
     </display>  
   </class>  
   <generalization id="22">    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <generalization id="23">    
-    <end type="SOURCE" refId="14"/>    
-    <end type="TARGET" refId="2"/>  
-  </generalization>  
-  <realization id="24">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="3"/>  
-  </realization>  
-  <realization id="25">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="4"/>  
-  </realization>  
-  <generalization id="26">    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <generalization id="27">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <generalization id="28">    
-    <end type="SOURCE" refId="21"/>    
-    <end type="TARGET" refId="10"/>  
-  </generalization>  
-  <generalization id="29">    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <generalization id="30">    
-    <end type="SOURCE" refId="18"/>    
-    <end type="TARGET" refId="2"/>  
-  </generalization>  
-  <realization id="31">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="3"/>  
-  </realization>  
-  <realization id="32">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="5"/>  
-  </realization>  
-  <generalization id="33">    
-    <end type="SOURCE" refId="17"/>    
-    <end type="TARGET" refId="2"/>  
-  </generalization>  
-  <generalization id="34">    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <generalization id="35">    
     <end type="SOURCE" refId="15"/>    
     <end type="TARGET" refId="2"/>  
   </generalization>  
-  <generalization id="36">    
+  <generalization id="23">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="24">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="25">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="10"/>  
+  </generalization>  
+  <realization id="26">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <generalization id="27">    
     <end type="SOURCE" refId="19"/>    
     <end type="TARGET" refId="16"/>  
   </generalization>  
-  <generalization id="37">    
-    <end type="SOURCE" refId="20"/>    
-    <end type="TARGET" refId="15"/>  
-  </generalization>  
-  <generalization id="38">    
-    <end type="SOURCE" refId="13"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <realization id="39">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="6"/>  
+  <realization id="28">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="3"/>  
   </realization>  
-  <generalization id="40">    
+  <generalization id="29">    
     <end type="SOURCE" refId="16"/>    
     <end type="TARGET" refId="2"/>  
   </generalization>  
+  <generalization id="30">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="31">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="32">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <realization id="33">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <realization id="34">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <realization id="35">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <generalization id="36">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="37">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <generalization id="38">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <generalization id="39">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="40">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
   <generalization id="41">    
-    <end type="SOURCE" refId="8"/>    
+    <end type="SOURCE" refId="13"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

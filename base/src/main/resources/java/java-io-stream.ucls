@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.3" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
   realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="java.io.OutputStream" project="git-base" 
+  <class id="1" language="java" name="java.io.OutputStream" project="base" 
     file="D:/Program Files/Java/jdk1.8.0_92/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="171" width="137" x="1291" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -10,7 +10,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="java.io.InputStream" project="git-base" 
+  <class id="2" language="java" name="java.io.InputStream" project="base" 
     file="D:/Program Files/Java/jdk1.8.0_92/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="238" width="148" x="476" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -19,7 +19,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="java.io.FileOutputStream" project="git-base" 
+  <class id="3" language="java" name="java.io.FileOutputStream" project="base" 
     file="D:/Program Files/Java/jdk1.8.0_92/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="53" width="123" x="1207" y="315"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -28,7 +28,7 @@
       <operations public="false" package="false" protected="false" private="false" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="java.io.ObjectOutputStream" project="git-base" 
+  <class id="4" language="java" name="java.io.ObjectOutputStream" project="base" 
     file="D:/Program Files/Java/jdk1.8.0_92/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="53" width="141" x="1026" y="315"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -37,7 +37,7 @@
       <operations public="false" package="false" protected="false" private="false" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="java.io.PipedOutputStream" project="git-base" 
+  <class id="5" language="java" name="java.io.PipedOutputStream" project="base" 
     file="D:/Program Files/Java/jdk1.8.0_92/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="53" width="136" x="1542" y="315"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -46,7 +46,7 @@
       <operations public="false" package="false" protected="false" private="false" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="java.io.FileInputStream" project="git-base" 
+  <class id="6" language="java" name="java.io.FileInputStream" project="base" 
     file="D:/Program Files/Java/jdk1.8.0_92/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="53" width="113" x="730" y="315"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -55,7 +55,7 @@
       <operations public="false" package="false" protected="false" private="false" static="true"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="java.io.ObjectInputStream" project="git-base" 
+  <class id="7" language="java" name="java.io.ObjectInputStream" project="base" 
     file="D:/Program Files/Java/jdk1.8.0_92/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="53" width="131" x="231" y="315"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -64,7 +64,7 @@
       <operations public="false" package="false" protected="false" private="false" static="true"/>    
     </display>  
   </class>  
-  <class id="8" language="java" name="java.io.PipedInputStream" project="git-base" 
+  <class id="8" language="java" name="java.io.PipedInputStream" project="base" 
     file="D:/Program Files/Java/jdk1.8.0_92/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="53" width="126" x="402" y="315"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -73,7 +73,7 @@
       <operations public="false" package="false" protected="false" private="false" static="true"/>    
     </display>  
   </class>  
-  <class id="9" language="java" name="java.io.ByteArrayInputStream" project="git-base" 
+  <class id="9" language="java" name="java.io.ByteArrayInputStream" project="base" 
     file="D:/Program Files/Java/jdk1.8.0_92/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="53" width="150" x="41" y="315"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -82,7 +82,7 @@
       <operations public="false" package="false" protected="false" private="false" static="true"/>    
     </display>  
   </class>  
-  <interface id="10" language="java" name="java.io.Closeable" project="git-base" 
+  <interface id="10" language="java" name="java.io.Closeable" project="base" 
     file="D:/Program Files/Java/jdk1.8.0_92/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="928" y="-41"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -91,7 +91,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <interface id="11" language="java" name="java.io.Flushable" project="git-base" 
+  <interface id="11" language="java" name="java.io.Flushable" project="base" 
     file="D:/Program Files/Java/jdk1.8.0_92/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1659" y="-7"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -100,7 +100,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="12" language="java" name="java.io.BufferedInputStream" project="git-base" 
+  <class id="12" language="java" name="java.io.BufferedInputStream" project="base" 
     file="D:/Program Files/Java/jdk1.8.0_92/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="53" width="143" x="477" y="431"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -109,7 +109,7 @@
       <operations public="false" package="false" protected="false" private="false" static="true"/>    
     </display>  
   </class>  
-  <class id="13" language="java" name="java.io.DataInputStream" project="git-base" 
+  <class id="13" language="java" name="java.io.DataInputStream" project="base" 
     file="D:/Program Files/Java/jdk1.8.0_92/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="53" width="120" x="660" y="431"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -136,7 +136,7 @@
       <operations public="false" package="false" protected="false" private="false" static="true"/>    
     </display>  
   </class>  
-  <class id="16" language="java" name="java.io.BufferedOutputStream" project="git-base" 
+  <class id="16" language="java" name="java.io.BufferedOutputStream" project="base" 
     file="D:/Program Files/Java/jdk1.8.0_92/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="53" width="153" x="1177" y="431"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -145,7 +145,7 @@
       <operations public="false" package="false" protected="false" private="false" static="true"/>    
     </display>  
   </class>  
-  <class id="17" language="java" name="java.io.PrintStream" project="git-base" 
+  <class id="17" language="java" name="java.io.PrintStream" project="base" 
     file="D:/Program Files/Java/jdk1.8.0_92/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="53" width="93" x="1370" y="431"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -154,7 +154,7 @@
       <operations public="false" package="false" protected="false" private="false" static="true"/>    
     </display>  
   </class>  
-  <class id="18" language="java" name="java.io.DataOutputStream" project="git-base" 
+  <class id="18" language="java" name="java.io.DataOutputStream" project="base" 
     file="D:/Program Files/Java/jdk1.8.0_92/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="53" width="130" x="1503" y="431"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

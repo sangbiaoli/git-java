@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.3" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
   realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <interface id="1" language="java" name="java.util.concurrent.ScheduledExecutorService" project="git-base" 
+  <interface id="1" language="java" name="java.util.concurrent.ScheduledExecutorService" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="388" y="531"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -10,7 +10,7 @@
       <operations public="true" package="true" protected="true" private="true" static="false"/>    
     </display>  
   </interface>  
-  <class id="2" language="java" name="java.util.concurrent.ScheduledThreadPoolExecutor" project="git-base" 
+  <class id="2" language="java" name="java.util.concurrent.ScheduledThreadPoolExecutor" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="391" y="815"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -20,7 +20,7 @@
     </display>  
   </class>  
   <class id="3" language="java" name="java.util.concurrent.Executors.DelegatedScheduledExecutorService" 
-    project="git-base" file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
+    project="base" file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="927" y="819"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -28,7 +28,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="java.util.concurrent.Executors.DelegatedExecutorService" project="git-base" 
+  <class id="4" language="java" name="java.util.concurrent.Executors.DelegatedExecutorService" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="926" y="635"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -37,7 +37,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="java.util.concurrent.Executors" project="git-base" 
+  <class id="5" language="java" name="java.util.concurrent.Executors" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1511" y="841"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -46,7 +46,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="6" language="java" name="java.util.concurrent.ExecutorService" project="git-base" 
+  <interface id="6" language="java" name="java.util.concurrent.ExecutorService" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="713" y="239"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -56,7 +56,7 @@
     </display>  
   </interface>  
   <class id="7" language="java" name="java.util.concurrent.ScheduledThreadPoolExecutor.ScheduledFutureTask" 
-    project="git-base" file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
+    project="base" file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="394" y="973"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -64,7 +64,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <interface id="8" language="java" name="java.util.concurrent.Executor" project="git-base" 
+  <interface id="8" language="java" name="java.util.concurrent.Executor" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="712" y="0"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -73,7 +73,7 @@
       <operations public="true" package="true" protected="true" private="true" static="false"/>    
     </display>  
   </interface>  
-  <class id="9" language="java" name="java.util.concurrent.Executors.RunnableAdapter" project="git-base" 
+  <class id="9" language="java" name="java.util.concurrent.Executors.RunnableAdapter" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="933" y="958"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -82,7 +82,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="10" language="java" name="java.util.concurrent.ThreadPoolExecutor" project="git-base" 
+  <class id="10" language="java" name="java.util.concurrent.ThreadPoolExecutor" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="706" y="634"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -91,7 +91,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="11" language="java" name="java.util.concurrent.AbstractExecutorService" project="git-base" 
+  <class id="11" language="java" name="java.util.concurrent.AbstractExecutorService" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="928" y="510"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -100,7 +100,7 @@
       <operations public="false" package="true" protected="true" private="true" static="false"/>    
     </display>  
   </class>  
-  <class id="12" language="java" name="java.util.concurrent.ForkJoinPool" project="git-base" 
+  <class id="12" language="java" name="java.util.concurrent.ForkJoinPool" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1106" y="635"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.3" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
   realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="java.util.ArrayList" project="git-base" 
+  <class id="1" language="java" name="java.util.ArrayList" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="551" y="486"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -10,7 +10,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <interface id="2" language="java" name="java.util.List" project="git-base" 
+  <interface id="2" language="java" name="java.util.List" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="444" y="220"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -19,7 +19,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </interface>  
-  <interface id="3" language="java" name="java.lang.Cloneable" project="git-base" 
+  <interface id="3" language="java" name="java.lang.Cloneable" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="232" y="724"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -28,7 +28,7 @@
       <operations public="true" package="true" protected="true" private="true" static="false"/>    
     </display>  
   </interface>  
-  <interface id="4" language="java" name="java.io.Serializable" project="git-base" 
+  <interface id="4" language="java" name="java.io.Serializable" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="504" y="727"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -37,7 +37,7 @@
       <operations public="true" package="true" protected="true" private="true" static="false"/>    
     </display>  
   </interface>  
-  <interface id="5" language="java" name="java.util.RandomAccess" project="git-base" 
+  <interface id="5" language="java" name="java.util.RandomAccess" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="737" y="726"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -46,7 +46,7 @@
       <operations public="true" package="true" protected="true" private="true" static="false"/>    
     </display>  
   </interface>  
-  <interface id="6" language="java" name="java.util.Collection" project="git-base" 
+  <interface id="6" language="java" name="java.util.Collection" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="462" y="-50"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -55,7 +55,7 @@
       <operations public="true" package="true" protected="true" private="true" static="false"/>    
     </display>  
   </interface>  
-  <interface id="7" language="java" name="java.lang.Iterable" project="git-base" 
+  <interface id="7" language="java" name="java.lang.Iterable" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="459" y="-356"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -73,7 +73,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <interface id="9" language="java" name="java.util.Map" project="git-base" 
+  <interface id="9" language="java" name="java.util.Map" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="73" y="212"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -100,7 +100,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="12" language="java" name="java.util.LinkedList" project="git-base" 
+  <class id="12" language="java" name="java.util.LinkedList" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="280" y="477"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -109,7 +109,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <interface id="13" language="java" name="java.util.Deque" project="git-base" 
+  <interface id="13" language="java" name="java.util.Deque" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="280" y="333"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -118,7 +118,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </interface>  
-  <interface id="14" language="java" name="java.util.Queue" project="git-base" 
+  <interface id="14" language="java" name="java.util.Queue" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="279" y="219"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -145,7 +145,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <interface id="17" language="java" name="java.util.SortedSet" project="git-base" 
+  <interface id="17" language="java" name="java.util.SortedSet" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="739" y="349"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -154,7 +154,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </interface>  
-  <class id="18" language="java" name="java.util.AbstractCollection" project="git-base" 
+  <class id="18" language="java" name="java.util.AbstractCollection" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="837" y="218"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -163,7 +163,7 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <interface id="19" language="java" name="java.util.Set" project="git-base" 
+  <interface id="19" language="java" name="java.util.Set" project="base" 
     file="C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="629" y="219"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
