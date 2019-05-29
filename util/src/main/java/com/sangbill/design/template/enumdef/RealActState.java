@@ -5,7 +5,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class RealActState {
-	public static Map<ERealActState, String> DESC_MAP = new LinkedHashMap<ERealActState, String>();
+	public static Map<ERealActState, String> DESCMAP = new LinkedHashMap<ERealActState, String>();
 	
 	public enum ERealActState{
 		UNRELEASED,
@@ -28,10 +28,10 @@ public class RealActState {
 		ACTIVITY_FINISHED(ERealActState.ACTIVITY_FINISHED,"活动结束"),
 		CANCELED(ERealActState.CANCELED,"已撤回");
 
-		public ERealActState eActState;
+		public ERealActState key;
 		public String value;
-		private EActStateDesc(ERealActState eActState, String value) {
-			this.eActState = eActState;
+		private EActStateDesc(ERealActState key, String value) {
+			this.key = key;
 			this.value = value;
 		}
 	}
@@ -39,7 +39,7 @@ public class RealActState {
 
 	static {
 		for (EActStateDesc ect : EActStateDesc.values()) {
-			DESC_MAP.put(ect.eActState, ect.value);
+			DESCMAP.put(ect.key, ect.value);
 		}
 	}
 	
@@ -47,8 +47,8 @@ public class RealActState {
 		Map<Integer, String> map = new LinkedHashMap<Integer, String>();
 		for (Iterator<ERealActState> it = enumMap.keySet().iterator(); it.hasNext();) {
 			ERealActState key = it.next();
-			if(DESC_MAP.containsKey(key)){
-				map.put(enumMap.get(key), DESC_MAP.get(key));
+			if(DESCMAP.containsKey(key)){
+				map.put(enumMap.get(key), DESCMAP.get(key));
 			}
 		}
 		return map;

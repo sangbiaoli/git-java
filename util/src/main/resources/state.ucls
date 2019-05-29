@@ -184,7 +184,7 @@
   </generalization>  
   <association id="22">    
     <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="23" name="eActState">        
+      <attribute id="23" name="key">        
         <position height="0" width="0" x="446" y="-9"/>      
       </attribute>      
       <multiplicity id="24" minimum="0" maximum="1">        
