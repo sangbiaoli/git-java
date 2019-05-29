@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.regex.PatternSyntaxException;
 
 public class TestRegExp {
 	public static final String GPS_REGEXP = "^gps*";
@@ -20,7 +21,18 @@ public class TestRegExp {
 //		System.out.println(toLegalLogName("2015003_device.log"));
 //		System.out.println(toLegalLogName("gps-ddde.log"));
 //		System.out.println("gps-".matches("^gps(\\S)+"));
-		TestData();
+//		TestData();
+		String data =  "\n\r#### aaops load 1d \n\r![screenshot](http://xx/nodejs/tmp/chart.797157c5046e4b04aaa9b1f16b55a413.png)\n\r";
+//		String data =  "\n\r#### aaops load 1d \n\r![screenshot](http:///chart.797157c5046e4b04aaa9b1f16b55a413.png)\n\r";
+
+//		String data = "#在抖音，记录美好生活#这大概就是冰雪美人吧…… http://v.douyin.com/eUWYth/ 复制此链接，打开【抖音短视频】，直接观看视频！";
+//        String regex = "(https?://(w{3}\\.)?)?\\w+\\.\\w+(\\.[a-zA-Z]+)*(:\\d{1,5})?(/\\w*)*(\\??(.+=.*)?(&.+=.*)?)?"; 
+		String regex = "http://[0-9a-zZ-Z/]+chart.[0-9a-zA-Z]+.png";
+        Pattern parrern = Pattern.compile(regex);
+        Matcher matcher = parrern.matcher(data);
+        if (matcher.find()){
+            System.out.println(matcher.group());
+        }
 	}
 	
 	private static void TestData() {
