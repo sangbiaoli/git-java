@@ -165,6 +165,8 @@ public class DateUtil {
 		return d;
 	}
 	
-	
+	public static Date now() {
+		return new Date();
+	}
 
 }
