@@ -28,22 +28,10 @@ public class RealActState {
 		ACTIVITY_FINISHED(ERealActState.ACTIVITY_FINISHED,"活动结束"),
 		CANCELED(ERealActState.CANCELED,"已撤回");
 
-		private ERealActState eActState;
-		private String value;
+		public ERealActState eActState;
+		public String value;
 		private EActStateDesc(ERealActState eActState, String value) {
 			this.eActState = eActState;
-			this.value = value;
-		}
-		public ERealActState getEActState() {
-			return eActState;
-		}
-		public void setEActState(ERealActState eActState) {
-			this.eActState = eActState;
-		}
-		public String getValue() {
-			return value;
-		}
-		public void setValue(String value) {
 			this.value = value;
 		}
 	}
