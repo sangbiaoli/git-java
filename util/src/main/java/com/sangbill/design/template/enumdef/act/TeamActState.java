@@ -3,11 +3,13 @@ package com.sangbill.design.template.enumdef.act;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+import com.sangbill.design.template.enumdef.RealActState;
 import com.sangbill.design.template.enumdef.RealActState.ERealActState;
 
 public class TeamActState {
 	public static Map<ERealActState, Integer> ENUMMAP = new LinkedHashMap<ERealActState, Integer>();
-
+	public static Map<Integer,String> DESCMAP = new LinkedHashMap<Integer, String>();
+	
 	public enum ETeamActState {
 		UNRELEASED(ERealActState.UNRELEASED,-1), 
 		ENTER_NOT_START(ERealActState.ENTER_NOT_START,1), 
@@ -30,5 +32,6 @@ public class TeamActState {
 		for (ETeamActState ect : ETeamActState.values()) {
 			ENUMMAP.put(ect.key, ect.value);
 		}
+		DESCMAP = RealActState.getDescMap(ENUMMAP);
 	}
 }

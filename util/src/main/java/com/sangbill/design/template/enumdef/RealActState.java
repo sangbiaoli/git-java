@@ -43,7 +43,7 @@ public class RealActState {
 		}
 	}
 	
-	public static Map<Integer,String> getStateMap(Map<ERealActState, Integer> enumMap){
+	public static Map<Integer,String> getDescMap(Map<ERealActState, Integer> enumMap){
 		Map<Integer, String> map = new LinkedHashMap<Integer, String>();
 		for (Iterator<ERealActState> it = enumMap.keySet().iterator(); it.hasNext();) {
 			ERealActState key = it.next();

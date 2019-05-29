@@ -3,10 +3,12 @@ package com.sangbill.design.template.enumdef.act;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+import com.sangbill.design.template.enumdef.RealActState;
 import com.sangbill.design.template.enumdef.RealActState.ERealActState;
 
 public class CheckinActState {
 	public static Map<ERealActState, Integer> ENUMMAP = new LinkedHashMap<ERealActState, Integer>();
+	public static Map<Integer,String> DESCMAP = new LinkedHashMap<Integer, String>();
 
 	public enum ECheckinActState {
 		UNRELEASED(ERealActState.UNRELEASED,0), 
@@ -29,5 +31,6 @@ public class CheckinActState {
 		for (ECheckinActState ect : ECheckinActState.values()) {
 			ENUMMAP.put(ect.key, ect.value);
 		}
+		DESCMAP = RealActState.getDescMap(ENUMMAP);
 	}
 }
