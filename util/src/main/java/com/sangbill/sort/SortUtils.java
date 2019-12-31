@@ -68,5 +68,44 @@ public class SortUtils {
 			array[j + 1] = temp;
 		}
 	}
+	/**
+	 * 希尔排序
+	 * @author liqiangbiao
+	 * 2019年12月31日
+	 *  @param array
+	 * void
+	 */
+	public static void shellSort(int[] array) {
+		if (array.length <= 1)
+			return;
+		
+		int len = array.length;
+		int gap = len / 2;
+		while(gap > 0){
+			for (int i = gap; i < len; i++) {
+				insertionSort(array,gap,i);
+			}
+			gap /= 2;
+		}
+		
+	}
+	/**
+	 * 从数组i的位置开始，以gap的距离进行插入排序
+	 * @author liqiangbiao
+	 * 2019年12月31日
+	 *  @param array
+	 *  @param gap
+	 *  @param i
+	 * void
+	 */
+	private static void insertionSort(int[] array, int gap, int i) {
+		int temp = array[i];
+		int j = i - gap;
+		while (j >= 0 && array[j] > temp) {
+			array[j + gap] = array[j];
+			j -= gap;
+		}
+		array[j + gap] = temp;
+	}
 
 }
