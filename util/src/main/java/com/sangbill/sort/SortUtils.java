@@ -8,7 +8,7 @@ public class SortUtils {
 		array[b] = temp;
 	}
 	/**
-	 * 冒泡排序
+	 * 冒泡排序：相邻做交换
 	 * @author liqiangbiao
 	 * 2019年12月31日
 	 *  @param array
@@ -27,7 +27,7 @@ public class SortUtils {
 		}
 	}
 	/**
-	 * 选择排序
+	 * 选择排序：挑选最大或最小，再交换
 	 * @author liqiangbiao
 	 * 2019年12月31日
 	 *  @param array
@@ -48,7 +48,7 @@ public class SortUtils {
 		}		
 	}
 	/**
-	 * 插入排序
+	 * 插入排序：从某个位置往回比较并插入，一直保持前面是有序的
 	 * @author liqiangbiao
 	 * 2019年12月31日
 	 *  @param array
@@ -69,7 +69,7 @@ public class SortUtils {
 		}
 	}
 	/**
-	 * 希尔排序
+	 * 希尔排序：切分分组，并用插入排序法（距离为gap）对分组内的元素进行配许
 	 * @author liqiangbiao
 	 * 2019年12月31日
 	 *  @param array
