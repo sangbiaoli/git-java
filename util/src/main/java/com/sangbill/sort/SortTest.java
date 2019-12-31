@@ -4,12 +4,15 @@ import java.util.Random;
 
 public class SortTest {
 	public static void main(String[] args) {
-		int[] array = randomInt(10);
+		int[] array = randomInt(20);
 		print("before", array);
-		// SortUtils.bubbleSort(arr);
-		// SortUtils.selectionSort(array);
-		// SortUtils.insertionSort(array);
+/*		SortUtils.bubbleSort(array);
+		SortUtils.selectionSort(array);
+		SortUtils.insertionSort(array);
 		SortUtils.shellSort(array);
+		array = SortUtils.mergeSort(array);
+		SortUtils.quickSort(array);*/
+		SortUtils.heapSort(array);
 		print("after", array);
 	}
 
@@ -17,16 +20,16 @@ public class SortTest {
 		Random r = new Random();
 		int[] array = new int[length];
 		for (int i = 0; i < length; i++) {
-			array[i] = r.nextInt(50);
+			array[i] = r.nextInt(100);
 		}
 		return array;
 	}
 
-	private static void print(String msg,int[] array) {
-		System.out.print(msg+":\t");
+	private static void print(String msg, int[] array) {
+		System.out.print(msg + ":\t");
 		for (int i = 0; i < array.length; i++) {
-			System.out.print(array[i]+",");
-		}		
+			System.out.print(array[i] + ",");
+		}
 		System.out.println();
 	}
 }
