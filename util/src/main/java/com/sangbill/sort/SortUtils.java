@@ -190,12 +190,47 @@ public class SortUtils {
 		return start;
 	}
 	/**
-	 * 堆排序
+	 * 堆排序：以大顶堆为例
 	 * @param array
 	 */
 	public static void heapSort(int[] array) {
-		// TODO Auto-generated method stub
+		if (array.length <= 1)
+			return;
 		
+		//从整个堆的最后一个非叶子节点开始，循环完所有则变成了大顶堆
+		for (int i = array.length / 2 - 1; i >= 0; i--) {
+			adjustHeap(array,i,array.length);
+		}
+		//调整对结构+交换堆顶与末尾元素
+		for (int j = array.length - 1; j > 0; j--) {
+			swap(array, 0, j); //将堆顶元素与末尾元素进行交换
+			adjustHeap(array, 0, j); //重新对堆进行调整
+		}
+	}
+	
+	/**
+	 * 调整完所有非叶子节点，该节点要与子节点比较并置换 <br>
+	 * 调整完一遍，保证最大的元素浮在根节点，为下一步交换做准备
+	 * @param array
+	 * @param i
+	 * @param length
+	 */
+	private static void adjustHeap(int[] array, int i, int length) {
+		int temp = array[i];// 先取出当前元素i
+		for (int k = i * 2 + 1; k < length; k = k * 2 + 1) { // 从i节点的左子节点元素开始
+			//尝试寻找右节点，存在则比较，如果右节点更大，则k指向右节点
+			if(k + 1 < length && array[k] < array[k+1]){
+				k++;
+			}
+			//如果子节点(不管是左还是右，都是大的那一个)大于父节点，将子节点赋值父节点
+			if(array[k] > temp){ 
+				array[i] = array[k];
+				i = k;
+			}else{
+				break;
+			}
+		}
+		array[i] = temp;	
 	}
 
 }
