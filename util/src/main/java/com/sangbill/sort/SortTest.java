@@ -11,8 +11,9 @@ public class SortTest {
 		SortUtils.insertionSort(array);
 		SortUtils.shellSort(array);
 		array = SortUtils.mergeSort(array);
-		SortUtils.quickSort(array);*/
-		SortUtils.heapSort(array);
+		SortUtils.quickSort(array);
+		SortUtils.heapSort(array);*/
+		SortUtils.countSort(array);
 		print("after", array);
 	}
 

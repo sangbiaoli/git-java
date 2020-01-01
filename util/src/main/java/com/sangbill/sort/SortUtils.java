@@ -232,5 +232,43 @@ public class SortUtils {
 		}
 		array[i] = temp;	
 	}
+	
+	/**
+	 * 标记最大与最小，并记录这个区间的所有数的记数，循环这些计数重置数组
+	 * 计数排序局限性较大，对于重复值较多的数组比较有用
+	 * @param array
+	 */
+	public static void countSort(int[] array) {
+		if (array.length <= 1)
+			return;
+
+		// 寻找最小与最大
+		int min = array[0], max = array[0];
+		for (int i = 0; i < array.length; i++) {
+			if (array[i] > max) {
+				max = array[i];
+			}
+			if (array[i] < min) {
+				min = array[i];
+			}
+		}
+		// 开始计数
+		int[] bucket = new int[max - min + 1];
+		Arrays.fill(bucket, 0);
+		for (int i = 0; i < array.length; i++) {
+			bucket[array[i] - min]++;
+		}
+
+		int index = 0;
+		// 组装结果
+		for (int i = min; i <= max; i++) {
+			int cnt = bucket[i - min];
+			while (cnt > 0) {
+				array[index] = i;
+				index++;
+				cnt--;
+			}
+		}
+	}
 
 }
