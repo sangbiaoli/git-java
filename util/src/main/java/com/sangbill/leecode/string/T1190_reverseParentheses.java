@@ -1,6 +1,6 @@
-package com.sangbill.leecode.other;
+package com.sangbill.leecode.string;
 
-public class Test22 {
+public class T1190_reverseParentheses {
 	public static String reverseParentheses(String s) {
 		StringBuilder sb = new StringBuilder(s);
 		int cnt = 0;

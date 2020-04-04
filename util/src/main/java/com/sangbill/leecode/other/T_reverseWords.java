@@ -1,6 +1,6 @@
 package com.sangbill.leecode.other;
 
-public class Test28 {
+public class T_reverseWords {
 	public static void reverseWords(char[] s) {
         final int N = s.length;
         if(N == 0)

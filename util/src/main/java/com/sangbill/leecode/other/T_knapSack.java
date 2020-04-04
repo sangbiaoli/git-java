@@ -1,5 +1,5 @@
-package com.sangbill.test.algorithm;
-public class KnapSack01 {
+package com.sangbill.leecode.other;
+public class T_knapSack {
     /**
      * 解决背包问题的递归函数
      *

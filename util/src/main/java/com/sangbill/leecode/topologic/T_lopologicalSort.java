@@ -1,4 +1,4 @@
-package com.sangbill.test.algorithm;
+package com.sangbill.leecode.topologic;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -6,7 +6,7 @@ import java.util.Deque;
 import java.util.List;
 import java.util.Queue;
 
-public class TopologicalSort {
+public class T_lopologicalSort {
     /**
      * Get topological ordering of the input directed graph 
      * @param n number of nodes in the graph

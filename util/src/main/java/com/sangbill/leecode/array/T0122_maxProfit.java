@@ -1,5 +1,5 @@
 package com.sangbill.leecode.array;
-class T122_maxProfit {
+class T0122_maxProfit {
     public static int maxProfit(int[] prices) {
         if(prices.length <= 1)
                     return 0;

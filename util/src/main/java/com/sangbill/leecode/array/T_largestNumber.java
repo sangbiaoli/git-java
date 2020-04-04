@@ -1,11 +1,11 @@
-package com.sangbill.leecode.other;
+package com.sangbill.leecode.array;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class Test20 {
+public class T_largestNumber {
 
 	public static String largestNumber(int[] nums) {
 		List<Integer> list = new ArrayList<Integer>();

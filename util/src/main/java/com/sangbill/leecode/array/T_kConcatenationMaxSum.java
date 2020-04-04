@@ -1,6 +1,6 @@
-package com.sangbill.leecode.other;
+package com.sangbill.leecode.array;
 
-public class Test30 {
+public class T_kConcatenationMaxSum {
 	
 	public static int kConcatenationMaxSum(int[] arr, int k) {
 		if (arr.length == 0 || k == 0)

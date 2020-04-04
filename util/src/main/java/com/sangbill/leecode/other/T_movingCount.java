@@ -2,7 +2,7 @@ package com.sangbill.leecode.other;
 
 import java.util.Stack;
 
-class Test42 {
+class T_movingCount {
     public static int movingCount(int m, int n, int k) {
         Stack<int[]> s = new Stack<int[]>();
         s.push(new int[]{0,0});

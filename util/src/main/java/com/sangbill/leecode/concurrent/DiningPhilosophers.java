@@ -1,4 +1,4 @@
-package com.sangbill.test.algorithm;
+package com.sangbill.leecode.concurrent;
 
 import java.util.concurrent.Semaphore;
 
