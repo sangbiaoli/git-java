@@ -11,6 +11,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
@@ -210,6 +212,7 @@ public class FileUtil {
 	}
 
 	private static void renameFile(String path, int n) {
+		Map<String,String> map = new HashMap<>();
 		File[] folders = new File(path).listFiles();
 		for(File folder:folders){
 			if(folder.isDirectory()){
@@ -218,20 +221,40 @@ public class FileUtil {
 				File[] files = folder.listFiles();
 				for(File file:files){
 					if(file.isFile()){
-						try{
-							String nfileName = getNfileName(file.getName(),n);
-							System.out.println(nfileName);
-							File nfile = new File(folderPath+File.pathSeparator+nfileName);
+						String srcName = file.getName();
+						String destName = getNfileName(srcName,n);
+						if(!destName.equals(file.getName())){
+							map.put(destName,srcName);
+							File nfile = new File(folderPath+File.separator+destName);
+							System.out.println(nfile.getAbsolutePath());
 							file.renameTo(nfile);
-						}catch(Exception e){
-							e.printStackTrace();
 						}
 					}					
 				}
 			}			
-		}	
+		}
+		
+		if(map.size() > 0){
+			for(File folder:folders){
+				if(folder.isDirectory()){
+					File[] files = folder.listFiles();
+					for(File file:files){
+						if(file.isFile()){
+							if(map.containsKey(file.getName())){
+								changeClassName(file, map.get(file.getName()), file.getName());
+							}
+						}					
+					}
+				}			
+			}
+		}
 	}
 	
+	private static void changeClassName(File file, String srcName, String destName) {
+		String content = readFile(file.getAbsolutePath());
+		content = content.replace("public class "+srcName.replace(".java", ""), "public class "+destName.replace(".java", ""));
+		writeFile(file.getAbsolutePath(), content);		
+	}
 	private static String getNfileName(String name, int n) {
 		int index = name.indexOf("_");
 		if(index == -1)
@@ -254,6 +277,7 @@ public class FileUtil {
 	
 	public static void main(String[] args) {
 		renameFile("C:/workspace/lqb/git-java/util/src/main/java/com/sangbill/leecode",4);
+
 	}
 	
 }
