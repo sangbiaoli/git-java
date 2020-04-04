@@ -208,13 +208,52 @@ public class FileUtil {
 		}
 		return isSuccess;
 	}
-	public static void main(String[] args) {
-		File file = new File("C:\\Users\\bill\\Desktop\\ciyun_weixin\\WEB-INF\\lib");
-		if(file.exists() && file.isDirectory()){
-			File[] files = file.listFiles();
-			for (int i = 0; i < files.length; i++) {
-				System.out.println(files[i].getName());
-			}
-		}
+
+	private static void renameFile(String path, int n) {
+		File[] folders = new File(path).listFiles();
+		for(File folder:folders){
+			if(folder.isDirectory()){
+				String folderPath = folder.getAbsolutePath();
+				System.out.println(folderPath);
+				File[] files = folder.listFiles();
+				for(File file:files){
+					if(file.isFile()){
+						try{
+							String nfileName = getNfileName(file.getName(),n);
+							System.out.println(nfileName);
+							File nfile = new File(folderPath+File.pathSeparator+nfileName);
+							file.renameTo(nfile);
+						}catch(Exception e){
+							e.printStackTrace();
+						}
+					}					
+				}
+			}			
+		}	
 	}
+	
+	private static String getNfileName(String name, int n) {
+		int index = name.indexOf("_");
+		if(index == -1)
+			return name;
+		
+		String num = name.substring(1,index);
+		int zeroCnt = n - num.length();
+		if(zeroCnt <= 0)
+			return name;		
+		return name.substring(0,1)+repeatZero(zeroCnt)+num+name.substring(index);
+	}
+	
+	private static String repeatZero(int num) {
+		StringBuilder sb = new StringBuilder();
+		for(int i = 0;i < num ;i++){
+			sb.append("0");
+		}
+		return sb.toString();
+	}
+	
+	public static void main(String[] args) {
+		renameFile("C:/workspace/lqb/git-java/util/src/main/java/com/sangbill/leecode",4);
+	}
+	
 }
