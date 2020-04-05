@@ -37,12 +37,16 @@ public class TreeNode {
 	}
 
 	public void print() {
-		System.out.print(val+" ");
+		System.out.print(val+",");
 		if(this.left != null){
 			this.left.print();
+		}else{
+			System.out.print("null,");
 		}
 		if(this.right != null){
 			this.right.print();
+		}else{
+			System.out.print("null,");
 		}
 	}
 }
