@@ -1,7 +1,5 @@
 package com.sangbill.leecode.string;
 
-import java.util.Arrays;
-
 public class T1585_isTransformable {
 
 	public boolean isTransformable(String s, String t) {
@@ -13,9 +11,20 @@ public class T1585_isTransformable {
 				i--;
 			}
 			if(i >= 0){  //字符不等，从sc中继续往回找
+				char max = tc[i];
 				for(int j = i;j >= 0;j--){
+					if(max < sc[j]){
+						max = sc[j];
+					}
 					if(sc[j] == tc[i]){
-						Arrays.sort(sc, j, i+1);
+						if(max != sc[j]){
+							return false;
+						}else{  //把sc[j]这个移到i位置
+							for(int k = j;k < i;k++){
+								sc[k] = sc[k+1];
+							}
+							sc[i] = tc[i];
+						}
 						break;
 					}
 				}
