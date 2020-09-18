@@ -1,44 +1,47 @@
-package com.sangbill.leecode.string;
+package com.centrin.ciyun.portal;
 
+import java.util.ArrayDeque;
+
+/**
+ * 检查字符串是否可以通过排序子字符串得到另一个字符串
+ */
 public class T1585_isTransformable {
+    public boolean isTransformable(String s, String t) {
+        ArrayDeque<Integer>[] q = new ArrayDeque[10];
 
-	public boolean isTransformable(String s, String t) {
-		char[] sc = s.toCharArray();
-		char[] tc = t.toCharArray();
-		int i = sc.length - 1;
-		while(i >= 0){
-			while(i >= 0 && sc[i] == tc[i]){
-				i--;
-			}
-			if(i >= 0){  //字符不等，从sc中继续往回找
-				char max = tc[i];
-				for(int j = i;j >= 0;j--){
-					if(max < sc[j]){
-						max = sc[j];
-					}
-					if(sc[j] == tc[i]){
-						if(max != sc[j]){
-							return false;
-						}else{  //把sc[j]这个移到i位置
-							for(int k = j;k < i;k++){
-								sc[k] = sc[k+1];
-							}
-							sc[i] = tc[i];
-						}
-						break;
-					}
-				}
-				//排完序后仍然不等，则返回false
-				if(sc[i] != tc[i]){
-					return false;
-				}
-			}
-		}
-		return true;
-	}
+        for(int i = 0;i < q.length;i++) {
+            q[i] = new ArrayDeque<>();
+        }
 
-	public static void main(String[] args) {
-		T1585_isTransformable t = new T1585_isTransformable();
-		System.out.println(t.isTransformable("34521", "23415"));
-	}
+        for(int i = 0;i < s.length();i++){
+            int n = s.charAt(i) - '0';
+            q[n].addLast(i);
+        }
+
+        for(int i = t.length() - 1;i >= 0 ;i--){
+            int n = t.charAt(i) - '0';
+            if(q[n].size() == 0){
+                return false;
+            }
+            if(n == (s.charAt(i) - '0')){
+                q[n].removeLast();
+                continue;
+            }else{
+                int p = q[n].getLast(); //得到这个数字n的最后一个索引
+                for(int j = n+1;j <= 9;j++){
+                    if(q[j].size() > 0 && q[j].getLast() > p){  //用比n大的数据得到它们的索引，如果索引更大，则排序无用
+                        return false;
+                    }
+                }
+                q[n].removeLast();
+            }
+        }
+        return true;
+    }
+
+    public static void main(String[] args) {
+        T1585_isTransformable su = new T1585_isTransformable();
+        System.out.println(su.isTransformable("84532","34852"));
+
+    }
 }
