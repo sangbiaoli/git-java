@@ -1,4 +1,4 @@
-package com.sangbill.leecode.tree;
+package com.sangbill.leecode.listnode;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
