@@ -1,53 +1,40 @@
 package com.sangbill.leecode.array;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 class T0315_countSmaller {
     public List<Integer> countSmaller(int[] nums) {
-        List<Integer> list = new ArrayList<>();
-        if(nums.length == 0){
-            return list;
+        int len = nums.length;
+        int[] res = new int[len];
+        for (int i = len - 1; i >= 0; i--) {
+            res[i]  = findMostLef(nums, i);
+            Arrays.sort(nums, i, len);
+        }
+        return Arrays.stream(res).boxed().collect(Collectors.toList());
+    }
+
+    private int findMostLef(int[] nums, int i) {
+        if (i == nums.length - 1) {
+            return 0;
+        }
+        if (nums[i] == nums[i + 1]) {  //已经是最小
+            return 0;
         }
 
-        int base = 10000;
-        Integer key = 0;
-
-        //统计各个数字出现次数
-        int[] cnt = new int[2*base+1];
-        TreeSet<Integer> set = new TreeSet<>();
-        for(int i = 0;i < nums.length;i++){
-            key = nums[i]+base;
-            cnt[key]++;
-            set.add(key);
-        }
-
-        //统计每个节点比自己小的累计数量
-        int[] cntSum = new int[2*base+1];
-        Integer pre = set.first();
-        cntSum[pre] = 0;
-        for( Iterator<Integer> it = set.iterator();it.hasNext();){
-            key = it.next();
-            if(key > pre){
-                cntSum[key] = cntSum[pre] + cnt[pre]; //上一个节点累计及上个节点数量
-            }
-            pre = key;
-        }
-
-        //循环数组
-        for(int i = 0;i < nums.length;i++){
-            key = nums[i]+base;
-            list.add(cntSum[key]);
-            //更新所有比key大的数据
-            SortedSet<Integer> subSet = set.tailSet(key,false);
-            for( Iterator<Integer> it = subSet.iterator();it.hasNext();){
-                cntSum[it.next()]--;
-            }
-            cnt[key]--;
-            if(cnt[key] == 0){
-                set.remove(key);
+        int target = nums[i];
+        int low = i + 1;
+        int high = nums.length - 1;
+        int mid;
+        while (low <= high) {
+            mid = (high + low) >> 1;
+            if (nums[mid] >= target) {
+                high = mid - 1;
+            } else {
+                low = mid + 1;
             }
         }
-        return list;
+        return low - i - 1;
     }
 
     public static void main(String[] args) {
