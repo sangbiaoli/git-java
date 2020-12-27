@@ -4,26 +4,22 @@ import java.util.Stack;
 
 class T0844_backspaceCompare {
     public boolean backspaceCompare(String S, String T) {
-        String s = backspace(S);
-        String t = backspace(T);
-        return s.equals(t);
+        return build(S).equals(build(T));
     }
 
-    public String backspace(String S){
-        Stack<Character> stack = new Stack();
-        for(char c:S.toCharArray()){
-            if(c == '#'){
-                if(stack.size() > 0){
-                    stack.pop();
+    public String build(String str) {
+        StringBuffer ret = new StringBuffer();
+        int length = str.length();
+        for (int i = 0; i < length; ++i) {
+            char ch = str.charAt(i);
+            if (ch != '#') {
+                ret.append(ch);
+            } else {
+                if (ret.length() > 0) {
+                    ret.deleteCharAt(ret.length() - 1);
                 }
-            }else{
-                stack.push(c);
             }
         }
-        StringBuilder sb = new StringBuilder();
-        for(Character c:stack){
-            sb.append(c);
-        }
-        return sb.toString();
+        return ret.toString();
     }
 }
