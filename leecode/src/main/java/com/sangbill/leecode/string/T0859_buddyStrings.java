@@ -18,7 +18,9 @@ class T0859_buddyStrings {
                 } else {
                     end = i;
                 }
-                if (cnt >= 3) {
+                if (cnt == 3) {
+                    return false;
+                }else if(cnt == 2 && (a[start] != b[end] || a[end] != b[start])){
                     return false;
                 }
             }
@@ -31,11 +33,8 @@ class T0859_buddyStrings {
                 }
             }
             return false;
-        } else if (cnt == 1) {
-            return false;
-        } else {
-            return (a[start] == b[end] && a[end] == b[start]);
         }
+        return cnt == 2;
     }
 
     public static void main(String[] args) {
