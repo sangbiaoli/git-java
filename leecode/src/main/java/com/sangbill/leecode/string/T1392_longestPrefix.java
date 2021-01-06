@@ -14,6 +14,21 @@ class T1392_longestPrefix {
             }
             mul = mul * base % mod;
         }
-        return s.substring(0, happy);                                                                    
+        return s.substring(0, happy);
+    }
+
+    public String longestPrefixOfKmp(String s) {
+        char[] c = (s + " ").toCharArray();//额外加多一个字符，好计算所有有效的next
+        int[] next = new int[c.length];
+        int j = 0, k = -1;
+        next[0] = -1;
+        while (j < c.length - 1) {
+            if (k == -1 || c[j] == c[k]) {
+                next[++j] = ++k;
+            } else {
+                k = next[k];
+            }
+        }
+        return s.substring(0, next[next.length - 1]);
     }
 }
