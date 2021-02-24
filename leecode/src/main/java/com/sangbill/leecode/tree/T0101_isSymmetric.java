@@ -9,8 +9,8 @@ package com.sangbill.leecode.tree;
  *     TreeNode(int x) { val = x; }
  * }
  */
-class T101_isSymmetric {
-    public static boolean isSymmetric(TreeNode root) {
+class T0101_isSymmetric {
+    public  boolean isSymmetric(TreeNode root) {
         if(root == null)
             return true;
         
@@ -21,7 +21,7 @@ class T101_isSymmetric {
         return isSymmetric(root.left,root.right);
     }
 
-    public static boolean isSymmetric(TreeNode left,TreeNode right){
+    public  boolean isSymmetric(TreeNode left,TreeNode right){
         if(!isSameNode(left,right))
             return false;
 
@@ -32,7 +32,7 @@ class T101_isSymmetric {
         return true;
     }
 
-    public static boolean isSameNode(TreeNode left,TreeNode right){
+    public  boolean isSameNode(TreeNode left,TreeNode right){
         if(left == null || right == null){
             return left == right;
         }
@@ -48,6 +48,7 @@ class T101_isSymmetric {
     	root.left.right = new TreeNode(4);
     	root.right.left = new TreeNode(4);
     	root.right.right = new TreeNode(3);
-    	System.out.println(isSymmetric(root));
+        T0101_isSymmetric su = new T0101_isSymmetric();
+    	System.out.println(su.isSymmetric(root));
 	}
 }

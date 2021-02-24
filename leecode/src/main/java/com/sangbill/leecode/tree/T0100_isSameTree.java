@@ -1,6 +1,6 @@
 package com.sangbill.leecode.tree;
 
-class T100_isSameTree {
+class T0100_isSameTree {
     public boolean isSameTree(TreeNode p, TreeNode q) {
         if(!isSameNode(p,q))
             return false;
