@@ -3,32 +3,33 @@ package com.sangbill.leecode.string;
 import java.util.HashSet;
 
 public class T0003_lengthOfLongestSubstring {
-	
-	public static int lengthOfLongestSubstring(String s) {
-		if(s == null || s.length() == 0)
-			return 0;
-		
-		int max = 0;
-		for (int i = 0; i < s.length(); i++) {
-			HashSet<Character> set = new HashSet<Character>();
-			set.add(s.charAt(i));
-			for (int j = i + 1; j < s.length(); j++) {
-				if(set.contains(s.charAt(j))){
-					break;
-				}else{
-					set.add(s.charAt(j));
+
+	public int lengthOfLongestSubstring(String s) {
+		boolean[] visited = new boolean[256];
+		int[] visitedIndex = new int[256];
+		int res = 0;
+		int cur = 0;
+		int start = 0,end = 0;
+		for (; end < s.length(); end++) {
+			cur = s.charAt(end);
+			if (visited[cur]) {
+				//比如当前是"abcde"，此时遇到了'c'字符，先结算当前长度，然后找出之前出现'c'的位置，把abc重置为未访问
+				res = Math.max(res, end - start);
+				for (int j = start; j < visitedIndex[cur]; j++) {
+					visited[s.charAt(j)] = false;
 				}
-				
+				start = visitedIndex[cur] + 1;
 			}
-			if(max < set.size()){
-				max = set.size();
-			}
+			visited[cur] = true;
+			visitedIndex[cur] = end;
 		}
-		return max;
+		res = Math.max(res, end - start);
+		return res;
 	}
 
 	public static void main(String[] args) {
+		T0003_lengthOfLongestSubstring su  = new T0003_lengthOfLongestSubstring();
 		String s = "bbbbbb";
-		System.out.println(lengthOfLongestSubstring(s));
+		System.out.println(su.lengthOfLongestSubstring(s));
 	}
 }
