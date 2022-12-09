@@ -8,7 +8,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.home>${env.JAVA_HOME}</java.home>
 		<blazeds.version>4.0.0.14931</blazeds.version>
-		<spring.version>3.0.5.RELEASE</spring.version>
+		<spring.version>6.0.0</spring.version>
 		<hibernate.version>3.5.4-Final</hibernate.version>
 		<cxf.version>2.5.3</cxf.version>
 	</properties>
